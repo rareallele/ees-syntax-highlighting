@@ -1,0 +1,43 @@
+{
+  "name": "ees",
+  "displayName": "Sintelix EES Syntax Highlighting",
+  "description": "Syntax highlighting for Sintelix EES",
+  "version": "0.0.1",
+  "icon": "sintelix-icon.png",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ees",
+        "aliases": [
+          "Sintelix EES",
+          "ees"
+        ],
+        "extensions": [
+          ".csg",
+          ".ees"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ees",
+        "scopeName": "source.csg",
+        "path": "./syntaxes/ees.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "EES Theme",
+        "uiTheme": "vs-dark",
+        "path": "./dark_plus_ees.json"
+      }
+    ]
+  }
+}

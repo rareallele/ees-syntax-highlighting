@@ -1,0 +1,23 @@
+Token.word.non-letter<test="test"> = $word
+> tag:Test
+
+well hello world
+
+// test comment
+
+/* test comment */
+
+#label "- SHRUGGED_OFF + *|comment" #
+(
+    Token.word.non-letter<string.lower="shrugged">
+    Token{0,1}
+    wordlist:off|Token.word.non-letter<string.lower="off", feature=true>
+    Token{0,3}
+    @ENTITIES_INVOLVED = $b
+    Token{0,3}
+    wordlist:comment|Token.word.non-letter<string.lower="comment">
+) = $y
+> !tag:Event -
+> tag:Event<Label = $y.text(),Actor2=$b.text(), EventType = "Decline comment", EventRoot = "MAKE PUBLIC STATEMENT", Scale ="-0.1", CAMEO="011", SubtypeID = "1">
+> tag:Lorem<"Document Title" = documentProperty("Metadata", "title")>
+> tag:Test<feature=$y.featureName>
