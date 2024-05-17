@@ -13,11 +13,19 @@
 		{
 			"name": "Annotations",
 			"scope": [
-				"annotation.general.ees",
-				"annotation.test.ees"
+				"annotation.general.ees"
 			],
 			"settings": {
 				"foreground": "#ff63a1"
+			}
+		},
+		{
+			"name": "Annotations",
+			"scope": [
+				"annotation.alias.ees"
+			],
+			"settings": {
+				"foreground": "#d08da8"
 			}
 		},
 		{

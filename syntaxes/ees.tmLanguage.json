@@ -15,6 +15,10 @@
 				{
 					"name": "annotation.general.ees",
 					"match": "[a-zA-Z]+\\:"
+				},
+				{
+					"name": "annotation.alias.ees",
+					"match": "[a-zA-Z%]+\\:"
 				}
 			]
 		},
@@ -47,6 +51,14 @@
 				{
 					"name": "statement.general.ees",
 					"match": "\\#with"
+				},
+				{
+					"name": "statement.general.ees",
+					"match": "\\#ifndef"
+				},
+				{
+					"name": "statement.general.ees",
+					"match": "\\#include"
 				},
 				{
 					"name": "statement.general.ees",
@@ -144,7 +156,7 @@
 			"patterns": [
 				{
 					"name": "ees.function.ees",
-					"match": "(?<=\\s)([a-zA-Z0-9_]+)(?=\\()"
+					"match": "(?<=(\\s|=))([a-zA-Z0-9_]+)(?=\\()"
 				}
 			]
 		}
