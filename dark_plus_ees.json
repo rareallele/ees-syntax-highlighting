@@ -48,7 +48,16 @@
 				"fontStyle": "bold",
 			}
 		},
-		
+				{
+			"name": "EES delete inline",
+			"scope": [
+				"delete.inline.ees",
+			],
+			"settings": {
+				"foreground": "#2e84ff",
+				"fontStyle": "bold",
+			}
+		},
 		{
 			"name": "EES variable",
 			"scope": [
@@ -58,7 +67,6 @@
 				"foreground": "#2e84ff"
 			}
 		},
-		
 		{
 			"name": "EES function",
 			"scope": [

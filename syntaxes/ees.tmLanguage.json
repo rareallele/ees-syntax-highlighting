@@ -38,6 +38,18 @@
 				},
 				{
 					"name": "statement.general.ees",
+					"match": "\\#sectionend"
+				},
+				{
+					"name": "statement.general.ees",
+					"match": "\\#scope"
+				},
+				{
+					"name": "statement.general.ees",
+					"match": "\\#with"
+				},
+				{
+					"name": "statement.general.ees",
 					"match": "\\#"
 				}
 			]
@@ -119,16 +131,20 @@
 		"variables": {
 			"patterns": [
 				{
+					"name": "delete.inline.ees",
+					"match": "\\$delete"
+				},
+				{
 					"name": "ees.variable.ees",
 					"match": "\\$[a-zA-Z0-9_]*"
-				}
+				}				
 			]
 		},
 		"functions": {
 			"patterns": [
 				{
 					"name": "ees.function.ees",
-					"match": "([a-zA-Z0-9_]+)(?=\\()"
+					"match": "(?<=\\s)([a-zA-Z0-9_]+)(?=\\()"
 				}
 			]
 		}
