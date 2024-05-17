@@ -2,7 +2,7 @@
   "name": "ees",
   "displayName": "Sintelix EES Syntax Highlighting",
   "description": "Syntax highlighting for Sintelix EES",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "icon": "sintelix-icon.png",
   "engines": {
     "vscode": "^1.89.0"
