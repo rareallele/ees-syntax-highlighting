@@ -129,6 +129,10 @@
 				{
 					"name": "ees.boolean.ees",
 					"match": "(?<=(=|= ))\\b(true|false)\\b"
+				},
+				{
+					"name": "ees.null.ees",
+					"match": "(?<=(=|= |,|, ))\\bnull(?!(=|\\())"
 				}
 			]
 		},

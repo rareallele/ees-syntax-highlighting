@@ -89,6 +89,7 @@
 			"name": "EES boolean",
 			"scope": [
 				"ees.boolean.ees",
+				"ees.null.ees"
 			],
 			"settings": {
 				"foreground": "#ff63a1"
