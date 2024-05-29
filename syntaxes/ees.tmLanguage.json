@@ -62,6 +62,10 @@
 				},
 				{
 					"name": "statement.general.ees",
+					"match": "\\#example"
+				},
+				{
+					"name": "statement.general.ees",
 					"match": "\\#"
 				}
 			]
@@ -128,7 +132,7 @@
 			"patterns": [
 				{
 					"name": "ees.boolean.ees",
-					"match": "(?<=(=|= ))\\b(true|false)\\b"
+					"match": "\\b(true|false)\\b"
 				},
 				{
 					"name": "ees.null.ees",
